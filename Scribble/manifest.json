@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "Scribbl Helper",
+    "version": "0.1",
+    "description": "Comparing words matching in length from wordlist and suggesting them",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://skribbl.io/*"
+            ],
+            "js": [
+                "jquery-2.2.4.min.js",
+                "content.js"
+            ]
+        }
+    ],
+    "browser_action": {
+        "default_icon": "icon.png"
+    }
+}
